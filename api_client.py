@@ -19,8 +19,8 @@ logger = logging.getLogger(__name__)
 # Value = doctorId and locationId required by slots/book APIs
 CENTER_MAP = {
     2: {"doctor_id": 4,   "location_id": 1},
-    4: {"doctor_id": 29,  "location_id": 2},
-    8: {"doctor_id": 106, "location_id": 3},
+    4: {"doctor_id": 29,  "location_id": 3},
+    8: {"doctor_id": 106, "location_id": 2},
     9: {"doctor_id": 159, "location_id": 4},
     10: {"doctor_id": 4,"location_id":108}
 }
