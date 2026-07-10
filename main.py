@@ -80,6 +80,7 @@ def handle_whatsapp_message(phone: str,
     from storage   import LeadStorage
 
     db = LeadStorage.get_or_create_by_phone(phone)
+    db.update(phone_number = phone)
     db.log("user", user_text)
 
     history, _, _ = db.load_session()
