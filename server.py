@@ -67,7 +67,7 @@ def _get_log_path():
     from config import LOG_PATH
     return BASE_DIR / LOG_PATH
 
-
+LOG_PATH = _get_log_path()
 #  SEND REPLY — uses AI-generated buttons/list from decision JSON
 #  Fully language-aware: AI generates all text in patient's language
 
@@ -486,3 +486,4 @@ def statistics():
         "diseases": diseases,
         "patient_types": patient_types,
     }
+
